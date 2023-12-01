@@ -7,8 +7,8 @@ import com.facebook.react.bridge.Promise;
 
 import go.backend.Backend; // Import your Go package
 
-public class MyGoModule extends ReactContextBaseJavaModule {
-    public MyGoModule(ReactApplicationContext reactContext) {
+public class GoModule extends ReactContextBaseJavaModule {
+    public GoModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
@@ -18,9 +18,9 @@ public class MyGoModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void simpleFunction(String name, Promise promise) {
+    public void someFunction(String name, Promise promise) {
         try {
-            String result = Backend.simpleFunction(name);
+            String result = Backend.someFunction(name);
             promise.resolve(result);
         } catch (Exception e) {
             promise.reject("Error", e.getMessage());

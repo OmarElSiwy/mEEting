@@ -43,16 +43,13 @@ RUN sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.2"
 # Install the Android NDK
 RUN sdkmanager "ndk;21.3.6528147"  # Replace with the version you need
 
-# Install GoMobile
-RUN go install golang.org/x/mobile/cmd/gomobile@latest
-RUN gomobile init
-
 # Copy the backend directory and build GoMobile bindings
 COPY backend /usr/src/app/backend
 WORKDIR /usr/src/app/backend
+
+# Install gomobile
 RUN go install golang.org/x/mobile/cmd/gomobile@latest
-RUN gomobile bind -target=android -o /usr/src/app/android/app/libs/backend.aar .
-RUN gomobile bind -target=ios -o /usr/src/app/ios/Backend.framework .
+RUN gomobile init
 
 # Switch back to the main app directory
 WORKDIR /usr/src/app
@@ -62,4 +59,6 @@ EXPOSE 19000
 EXPOSE 8081
 
 # Run Expo start 
+# RUN gomobile bind -target=android -o /usr/src/app/android/app/libs/backend.aar .
+# RUN gomobile bind -target=ios -o /usr/src/app/ios/Backend.framework .
 # CMD ["expo", "start"]

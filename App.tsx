@@ -2,16 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import { NativeModules } from 'react-native';
 
-const { GoModule } = NativeModules;
+const { MyGoModule } = NativeModules;
 
 function App(): JSX.Element {
   const [result, setResult] = useState('');
 
   useEffect(() => {
-    // Call the Go function
-    GoModule.simpleFunction('React Native')
-      .then(setResult)
-      .catch((error: any) => console.error('Error calling Go function:', error));
+    MyGoModule.someFunction('YourName')
+      .then((res: string) => {
+        setResult(res);
+      })
+      .catch((err: any) => {
+        console.error(err);
+      });
   }, []);
 
   return (
