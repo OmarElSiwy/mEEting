@@ -1,6 +1,6 @@
-# mEEting - Electrical Engineering Forum App
+# <span style="color: #007acc;">mEEting</span> - <span style="font-weight: bold;">Electrical Engineering Forum App</span>
 
-Welcome to **mEEting**, your go-to application for connecting with the Electrical Engineering community and staying updated on the latest news and academic discussions in the field. This mobile app, compatible with both iOS and Android devices, is designed to make it easier for EE enthusiasts to engage in meaningful conversations, access academic resources, and stay informed about the latest developments in Electrical Engineering.
+Welcome to <span style="font-weight: bold;">mEEting</span>, your go-to application for connecting with the Electrical Engineering community and staying updated on the latest news and academic discussions in the field. This mobile app, compatible with both iOS and Android devices, is designed to make it easier for <span style="font-style: italic;">EE enthusiasts</span> to engage in meaningful conversations, access academic resources, and stay informed about the latest developments in <span style="font-weight: bold;">Electrical Engineering</span>.
 
 ## Table of Contents
 - [Features](#features)
@@ -74,7 +74,7 @@ npx expo start
 
 3. Connect your Android or iOS device to test the app, or use an emulator/simulator for testing.
 
-4. Start exploring the world of Electrical Engineering with mEEting!
+4. Start exploring the world of Electrical Engineering with <span style="font-weight: bold;">mEEting</span>!
 
 ---
 
@@ -82,30 +82,30 @@ npx expo start
 1. Setup Dockerfile Environment:
 
 Created a Dockerfile to establish a standardized development environment for cross-collaboration.
-Developed an executable (Expotest.sh) to streamline code execution within the virtual desktop.
-✅ Completed.
+Developed an executable (<span style="font-style: italic;">Expotest.sh</span>) to streamline code execution within the virtual desktop.
+✅
 
 2. Backend Environment Setup:
 
 Configured the backend environment to handle Posting, Getting, and Querying of information.
 Utilized a custom database setup for enhanced security compared to external APIs.
-✅ Completed.
+✅
 
 3. User Authentication:
 
 Implemented a robust login and registration system with verification specific to University of Waterloo Electrical Engineering students.
-✅ Completed.
+✅
 
 4. Frontend Dependencies:
 
 Installed all required dependencies for the frontend project to ensure smooth development.
-✅ Completed.
+✅
 
 5. Native Module Integration:
 
 Integrated the external backend code with the frontend using native modules.
 Developed Swift and Java interface code to facilitate communication with the GO code, enabling seamless interaction with TypeScript.
-✅ Completed.
+✅
 
 6. Frontend Design:
 
@@ -115,7 +115,7 @@ ISSUES: No MacOS to test IOS version on (Buying a MacBook soon)
 
 ## Contributing
 
-We welcome contributions from the community to make mEEting even better. If you'd like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
+We welcome contributions from the community to make <span style="font-weight: bold;">mEEting</span> even better. If you'd like to contribute, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
 ---
 
@@ -125,19 +125,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ---
 
-Thank you for choosing mEEting for all your Electrical Engineering discussions and news updates. We look forward to building a vibrant and supportive community together. If you have any questions or suggestions, please don't hesitate to reach out!
-
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Thank you for choosing <span style="font-weight: bold; color: #007acc;">mEEting</span> for all your Electrical Engineering discussions and news updates. We look forward to building a vibrant and supportive community together. If you have any questions or suggestions, please don't hesitate to reach out!
